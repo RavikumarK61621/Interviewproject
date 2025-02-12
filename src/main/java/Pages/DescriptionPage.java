@@ -1,12 +1,14 @@
 package Pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 
-import com.framework.testng.api.base.ProjectSpecificMethods;
+import com.AMEX.ProjectSpecificMethodBase;
 
-public class DescriptionPage extends ProjectSpecificMethods{
+public class DescriptionPage extends ProjectSpecificMethodBase{
 	
-	public UserDetailsPage addTheCard() {
+	public UserDetailsPage addTheCard() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("//a[text()='Demandez votre Carte']")).click();
 		reportStep("Click on the Demandez votre carte", "pass");

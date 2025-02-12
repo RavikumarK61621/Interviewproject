@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.AMEX.ProjectSpecificMethod;
+import com.AMEX.ProjectSpecificMethodBase;
 
-public class FinancialInformation extends ProjectSpecificMethod{
+public class FinancialInformation extends ProjectSpecificMethodBase{
 	
 	
 	public FinancialInformation enterTheIBAN() throws IOException {

@@ -1,14 +1,16 @@
 package Pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.framework.testng.api.base.ProjectSpecificMethods;
+import com.AMEX.ProjectSpecificMethodBase;
 
-public class PersonalDetails extends ProjectSpecificMethods{
+public class PersonalDetails extends ProjectSpecificMethodBase{
 	
-	public PersonalDetails clickOnCheckBox() {
+	public PersonalDetails clickOnCheckBox() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("//label[@class='css-qv4r03']")).click();
 		reportStep("Clicked the checkbox", "pass");
@@ -18,7 +20,7 @@ public class PersonalDetails extends ProjectSpecificMethods{
 		return this;		
 	}
 	
-	public PersonalDetails enterTheBirthPlace() {
+	public PersonalDetails enterTheBirthPlace() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("//input[@id='fieldControl-input-placeOfBirth']")).sendKeys("Texas");
 		reportStep("Entered the Birth Place", "pass");
@@ -28,7 +30,7 @@ public class PersonalDetails extends ProjectSpecificMethods{
 		return this;	
 	}
 	
-	public PersonalDetails selectTheDepartment() {
+	public PersonalDetails selectTheDepartment() throws IOException {
 		try {
 		WebElement element = getDriver().findElement(By.xpath("//select[@id='fieldControl-input-departmentOfBirth']"));
 		Select option = new Select(element);
@@ -41,7 +43,7 @@ public class PersonalDetails extends ProjectSpecificMethods{
 	}
 	
 	
-	public PersonalDetails enterTheResidence() {
+	public PersonalDetails enterTheResidence() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("//input[@id='fieldControl-input-residentialAddressLine2']")).sendKeys("enter the residence");
 		reportStep("Residence has entered", "pass");
@@ -52,7 +54,7 @@ public class PersonalDetails extends ProjectSpecificMethods{
 	}
 	
 	
-	public PersonalDetails enterThePinCode() {
+	public PersonalDetails enterThePinCode() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("//input[@id='fieldControl-input-postcode']")).sendKeys("60940");
 		reportStep("Pincode has entered", "pass");
@@ -62,7 +64,7 @@ public class PersonalDetails extends ProjectSpecificMethods{
 		return this;	
 	}
 	
-	public PersonalDetails enterTheCity() {
+	public PersonalDetails enterTheCity() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("//input[@id='fieldControl-input-cityTown']")).sendKeys("texas");
 		reportStep("City has entered", "pass");
@@ -73,7 +75,7 @@ public class PersonalDetails extends ProjectSpecificMethods{
 	}
 	
 	
-	public PersonalDetails enterResidentialStatus() {
+	public PersonalDetails enterResidentialStatus() throws IOException {
 		try {
 		WebElement element = getDriver().findElement(By.xpath("//select[@id='fieldControl-input-personalResidentialStatus']"));
 		Select option = new Select(element);
@@ -85,7 +87,7 @@ public class PersonalDetails extends ProjectSpecificMethods{
 		return this;		
 	}
 	
-	public FinancialInformation ClickSubmitButton() {
+	public FinancialInformation ClickSubmitButton() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("//button[@type='submit']")).click();
 		reportStep("Submit button has clicked", "pass");

@@ -4,9 +4,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 
-import com.AMEX.ProjectSpecificMethod;
+import com.AMEX.ProjectSpecificMethodBase;
 
-public class PreapprovedPage extends ProjectSpecificMethod{
+public class PreapprovedPage extends ProjectSpecificMethodBase{
 
 	public PreapprovedPage clickOnContinue() throws IOException {
 		try {

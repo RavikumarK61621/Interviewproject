@@ -4,9 +4,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 
-import com.AMEX.ProjectSpecificMethod;
+import com.AMEX.ProjectSpecificMethodBase;
 
-public class SecurityInformation extends ProjectSpecificMethod{
+public class SecurityInformation extends ProjectSpecificMethodBase{
 
 	public SecurityInformation enterMothersMaidenName() throws IOException {
 		try {

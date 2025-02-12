@@ -1,12 +1,14 @@
 package Pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 
-import com.framework.testng.api.base.ProjectSpecificMethods;
+import com.AMEX.ProjectSpecificMethodBase;
 
-public class FRAllcards extends ProjectSpecificMethods{
+public class FRAllcards extends ProjectSpecificMethodBase{
 
-	public DescriptionPage selectTheCard() {
+	public DescriptionPage selectTheCard() throws IOException {
 		try {
 		getDriver().findElement(By.xpath("(//div[@class = 'button parbase']/div/a)[2]")).click();
 		reportStep("Click on the En Savoir plus ", "pass");

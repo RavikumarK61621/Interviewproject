@@ -4,9 +4,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 
-import com.AMEX.ProjectSpecificMethod;
+import com.AMEX.ProjectSpecificMethodBase;
 
-public class UserDetailsPage extends ProjectSpecificMethod{
+public class UserDetailsPage extends ProjectSpecificMethodBase{
 
 	public UserDetailsPage selectTheCivilité() throws IOException {
 		try {

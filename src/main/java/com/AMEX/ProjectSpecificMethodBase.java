@@ -20,7 +20,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class ProjectSpecificMethod {
+public class ProjectSpecificMethodBase {
 private static final ThreadLocal<RemoteWebDriver> cdDriver=new ThreadLocal<RemoteWebDriver>();
 	
 	public void setDriver() {

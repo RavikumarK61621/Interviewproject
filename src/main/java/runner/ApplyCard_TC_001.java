@@ -2,12 +2,17 @@ package runner;
 
 import java.io.IOException;
 
-import com.AMEX.ProjectSpecificMethod;
+import org.testng.annotations.Test;
+
+import com.AMEX.ProjectSpecificMethodBase;
+
 import Pages.HomePage;
 
-public class ApplyCard_TC_001 extends ProjectSpecificMethod{
+public class ApplyCard_TC_001 extends ProjectSpecificMethodBase{
+
 	
-public void cardApplication(String[] args) throws IOException {
+@Test
+public void cardApplication() throws IOException {
 	
 	HomePage hp = new HomePage();
 	hp.clickOnCard()
