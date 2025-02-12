@@ -31,8 +31,6 @@ private static final ThreadLocal<RemoteWebDriver> cdDriver=new ThreadLocal<Remot
 		return cdDriver.get();
 	}
 	
-	public String datasheet;
-	public static Properties pro;
 	public static ExtentHtmlReporter repo;
 	public static ExtentReports er;
 	public static ExtentTest test;
